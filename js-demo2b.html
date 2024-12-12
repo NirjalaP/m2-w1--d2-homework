@@ -25,7 +25,33 @@
             $("#showheading th:nth-child(4)").text(data.head3); 
             $("#showheading th:nth-child(5)").text(data.head4); 
 
-            
+            // Set the subheadings for rows (Calories, Fat, Vendor)
+            $("#showcalories td:nth-child(1)").text(data.subheadcal); // "Calories" in the first column of calories row
+            $("#showcalories td:nth-child(2)").text(data.cal1);
+            $("#showcalories td:nth-child(3)").text(data.cal2);
+            $("#showcalories td:nth-child(4)").text(data.cal3);
+            $("#showcalories td:nth-child(5)").text(data.cal4);
+
+
+            $("#showfat td:nth-child(1)").text(data.subheadfat); // "Fat" in the first column of fat row
+            $("#showfat td:nth-child(2)").text(data.fat1);
+            $("#showfat td:nth-child(3)").text(data.fat2);
+            $("#showfat td:nth-child(4)").text(data.fat3);
+            $("#showfat td:nth-child(5)").text(data.fat4);
+
+
+            $("#showven td:nth-child(1)").text(data.subheadven);
+            $("#showven td:nth-child(2)").text(data.ven1);
+            $("#showven td:nth-child(3)").text(data.ven2);
+            $("#showven td:nth-child(4)").text(data.ven3);
+            $("#showven td:nth-child(5)").text(data.ven4);
+
+            // Show the table after populating it with data
+            $("table").fadeIn();
+          });
+        });
+      });
+
     </script>
   </head>
   <body>
